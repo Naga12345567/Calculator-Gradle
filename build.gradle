@@ -75,7 +75,7 @@ war {
 
 task copyTask(type: Copy) {
     from 'C:\\GradleExample\\Calculator\\build\\libs'
-    into 'C:\\apache-tomcat-9.0.2\\webapps'
+    into 'C:\\apache-tomcat-7.0.82\\webapps'
 }
 copyTask.dependsOn(war)
 
