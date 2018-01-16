@@ -36,6 +36,8 @@ dependencies {
 
 clean {
 	doLast {
+		delete 'C:\\apache-tomcat-7.0.82\\webapps\\Calculator.war'
+		delete 'C:\\apache-tomcat-7.0.82\\webapps\\Calculator'
         println 'cleaned previous build'
     }
 }
@@ -72,6 +74,7 @@ war {
 	archiveName 'Calculator.war'
 	webAppDir
 }
+
 
 task copyTask(type: Copy) {
     from 'C:\\GradleExample\\Calculator-Gradle\\build\\libs'
