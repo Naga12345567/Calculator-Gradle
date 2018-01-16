@@ -34,10 +34,10 @@ dependencies {
     compile "junit:junit:4.12"
 }
 
+
+
 clean {
 	doLast {
-		delete 'C:\\apache-tomcat-7.0.82\\webapps\\Calculator.war'
-		delete 'C:\\apache-tomcat-7.0.82\\webapps\\Calculator'
         println 'cleaned previous build'
     }
 }
